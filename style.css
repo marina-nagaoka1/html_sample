@@ -1,0 +1,71 @@
+
+header{
+  background: #f5b5a7;
+}
+#eyecatch{
+  background: url('eyecatch.jpg') no-repeat;
+  background-size: cover;
+  background-position: 60% 40%;
+  height: 230px;
+}
+main{
+
+  display: block;
+}
+footer{
+  background: #bde1da;
+}
+.container{
+  width: 500px;
+  margin: 0 auto;
+}
+
+
+nav ul{
+display: table;
+margin: 0 auto;
+padding: 0;
+width: 80%;
+text-align: center;
+}
+nav ul li{
+display: table-cell;
+position: relative;
+}
+nav ul li a{
+display: block;
+width: 100%;
+}
+nav ul li a::after,
+nav ul li a::before {
+display: block;
+content: ”;
+position: absolute;
+}
+nav ul li a::after {
+bottom: -50%;
+left: 50%;
+width: 5px;
+height: 5px;
+background-color: #ccc;
+border-radius: 100%;
+}
+nav ul li a.current::after {
+background-color: #3498db;
+}
+nav ul li a:hover{
+color: #3498db;
+}
+nav ul li a:hover:after {
+background-color: yellow;
+width: 100%;
+left: 0;
+border-radius: 5px;
+}
+nav ul li a{
+text-decoration: none;
+color:#aaa;
+}
+nav ul li a.current{
+color:#555;
+}
